@@ -56,3 +56,15 @@ Before a release candidate:
 4. Run native Minecraft QA.
 5. Verify content, registry, and save behavior.
 6. Publish only verified artifacts.
+
+## Expanded recovery checks — 6 October 2026
+
+A fresh direct audit of the recovered dev7-polish39 candidate ran 17 existing scripts: 15 passed, one failed, and one could not complete because its historical fixture is missing. Some scripts wrap overlapping checks; these are not 17 independent gameplay tests.
+
+- Passed: exact 45-file source-pack inventory, 48 spawn-egg model states, Cherry standalone assets and legacy Blossom routing, Froglight family/material checks, Boomshroom, Cat source geometry, Pie source fidelity, sampled Pie/Cherry formulas, Cat gait/personality checks, and deterministic model regeneration.
+- Failed: Shroomboom protection check expects Nacrella texture SHA-256 `f3c8a72ba144d4fb0ed91f5990944cb0d6473f8450f4c6eb1fe52bc03811c7ae`; recovered source and inspected JAR contain `88801b8ad90f41a2180f1f8033dbafc53b198fda425f1c02d453b6b625a055ad`. This discrepancy predates the direct audit. Preserve both the historical expectation and current texture until provenance/visual acceptance is reconciled.
+- Blocked: Cat rest-pose polish test requires absent `pose-history/1.4.17-before/CreeperellaModel.java`. No substitute fixture was fabricated.
+- The bundled source checksum list is stale relative to seven of its 264 listed source entries, mainly Nacrella art and two model classes. Do not treat that list as a current acceptance receipt.
+- A separate staged resource-graph checker parsed all 134 runtime JSON files and found no missing explicit local model/texture paths. Seven negative/positive fixtures passed, including malformed JSON, duplicate keys and missing references. External Minecraft assets, inherited texture-variable bindings, registries and save migration are outside this checker’s proof.
+
+All 267 runtime-source files remain byte-identical to the recovered source archive. New checks are staged tooling only; no gameplay code, texture, expected protection hash or accepted release was replaced. Fresh compilation and native Minecraft acceptance are still open.
