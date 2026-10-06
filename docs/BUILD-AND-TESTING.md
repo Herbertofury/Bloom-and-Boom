@@ -23,14 +23,22 @@ Wrapper builds should use:
 
 when the official wrapper is restored.
 
-## Current Build State
+## Current Build State — 2026-10-06
 
-Current documentation does not claim a successful build.
+A development candidate JAR has been independently downloaded and inspected:
 
-Known blocker:
+- Size: **437,288 bytes**
+- SHA-256: `061ff99e83e4ba40782b1c4e3353b03e551b73b58ab1b843b8cfd6d2289d147c`
+- Archive integrity: PASS (336 entries)
+- Metadata: legacy display name and old repository URL remain; this is **not the public release**.
 
-- Gradle wrapper/tool recovery remains incomplete in the available environment.
-- Native Minecraft QA is pending a successful build.
+A later branding-corrected JAR was reported, but has not been independently inspected in this workspace. Earlier build-work reports describe compilation/reobfuscation success and a development server reaching `Done`. Those reports are not a freshly repeated build or production-JAR acceptance test.
+
+The reported native client blocker is `UnsatisfiedLinkError: Failed to locate library: liblwjgl.so`. Check Linux x86_64 LWJGL native classifiers and the matching runtime before retrying. A working Xvfb display alone does not resolve mismatched native libraries.
+
+The current direct-work environment still needs the exact source/toolchain and dependencies restored. Keep these stages separate: artifact inspection, reproducible build, development launch, production-JAR launch, gameplay, and save/reload acceptance.
+
+See the [build wiki](https://github.com/Herbertofury/Bloom-and-Boom/wiki/Build-and-Testing) for the full native QA protocol.
 
 ## Offline Regression Testing
 

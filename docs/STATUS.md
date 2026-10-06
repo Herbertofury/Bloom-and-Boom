@@ -2,7 +2,7 @@
 
 ## Identity
 
-Bloom & Boom is the public documentation home for Creeperella, a botanical Minecraft Forge 1.20.1 project.
+**Bloom & Boom** is the official mod and project name. Legacy `creeperella` registry/save identifiers remain for compatibility.
 
 This repository currently documents the project direction. It does not yet contain the recovered development source tree.
 
@@ -38,9 +38,11 @@ Completed without claiming a Minecraft build:
 
 ## Current Blockers
 
-Build verification is pending because the current environment lacks a working Gradle launcher/wrapper recovery path.
+An independently inspected dev7 candidate JAR exists (437,288 bytes; SHA-256 `061ff99e83e4ba40782b1c4e3353b03e551b73b58ab1b843b8cfd6d2289d147c`). Archive integrity passed, but its public display metadata still needs correction.
 
-Native Minecraft client testing has not been claimed until a successful build exists.
+Build success and development-server startup were reported in earlier work; reproduction in the current environment remains pending. Native client work reported a missing Linux LWJGL library (`liblwjgl.so`). Production-JAR gameplay, clean save/reload and genuine in-game screenshots remain unverified.
+
+See [Build & Testing](BUILD-AND-TESTING.md) for evidence levels and the remaining gates.
 
 NBT migration cannot be proven statically.
 
