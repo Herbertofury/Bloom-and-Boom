@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+  <rect width="1200" height="320" fill="#172018"/>
+  <g fill="none" stroke="#9bd36a" stroke-width="6">
+    <path d="M120 250 C120 140 180 100 240 70"/>
+    <path d="M240 70 C300 40 350 55 390 100"/>
+    <path d="M240 70 C220 25 160 25 130 55"/>
+  </g>
+  <g fill="#e98bb5" stroke="#ffd7e7" stroke-width="3">
+    <circle cx="390" cy="100" r="32"/>
+    <circle cx="330" cy="75" r="22"/>
+    <circle cx="270" cy="120" r="26"/>
+  </g>
+  <g fill="#8ad8ff" opacity="0.8">
+    <circle cx="870" cy="120" r="18"/>
+    <circle cx="920" cy="90" r="12"/>
+    <circle cx="970" cy="140" r="15"/>
+  </g>
+  <rect x="520" y="80" width="430" height="150" rx="18" fill="#233326" stroke="#9bd36a" stroke-width="4"/>
+  <text x="735" y="145" text-anchor="middle" fill="#fff1b8" font-family="monospace" font-size="42">BLOOM &amp; BOOM</text>
+  <text x="735" y="190" text-anchor="middle" fill="#d6f4c0" font-family="monospace" font-size="22">PROJECT ARTWORK • CREEPERELLA</text>
+</svg>
