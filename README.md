@@ -46,7 +46,7 @@ The approved design direction keeps a centralized themed burst system instead of
 | Stable lineage | Creeperella 1.5.0 |
 | Verified development lineage | Creeperella 1.6.0-dev6+ |
 | dev7-polish39 candidate | Recovered development candidate, not published release |
-| Build status | Awaiting recovered native build workflow/toolchain |
+| Build status | Candidate JAR inspected; reproducible build and corrected metadata still to verify |
 | Native Minecraft QA | Pending dev7 validation |
 
 ---
@@ -63,8 +63,8 @@ Verified historical native work exists for earlier accepted checkpoints.
 
 Not claimed for current dev7 candidate:
 
-- successful Forge build
-- generated release JAR
+- independently reproduced Forge build
+- accepted public release JAR
 - native client/server validation
 - save migration verification
 
