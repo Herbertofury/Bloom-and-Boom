@@ -2,9 +2,9 @@
 
 A botanical Minecraft Forge project where Creepers become living floral variants with themed identities, Bloom Bursts, and a long-term ReBloom lifecycle vision.
 
-![Bloom & Boom family in native Minecraft](docs/native-froglights-reference2.png)
+![Bloom & Boom family in native Minecraft](docs/native-froglights-reference3.png)
 
-*Actual cropped Minecraft Forge development-client captures of reference2. Visual fidelity remains under review.*
+*Actual cropped Minecraft Forge development-client captures of reference3. Visual fidelity remains under review.*
 
 ## 🌱 Project Identity
 
@@ -12,7 +12,7 @@ A botanical Minecraft Forge project where Creepers become living floral variants
 
 Legacy internal registry/save identifiers remain preserved unless a tested migration is explicitly required.
 
-The tested development source, JAR and QA evidence were delivered privately to the owner. Public bundle publication, a browsable source-tree import and a stable release remain open. See [the current reconstruction checkpoint](docs/REFERENCE2.md) for exact hashes and remaining gates.
+The tested development source, JAR and QA evidence were delivered privately to the owner. Public bundle publication, a browsable source-tree import and a stable release remain open. See [the current reconstruction checkpoint](docs/REFERENCE3.md) for exact hashes and remaining gates.
 
 ---
 
@@ -47,7 +47,7 @@ The approved design direction keeps a centralized themed burst system instead of
 | Forge target | 47.4.23 |
 | Stable lineage | Creeperella 1.5.0 |
 | Verified development lineage | Creeperella 1.6.0-dev6+ |
-| Latest local candidate | 1.6.0-dev7-polish39-reference2; development preview, not a stable release |
+| Latest local candidate | 1.6.0-dev7-polish39-reference3; development preview, not a stable release |
 | Build status | Java 17 / Gradle 8.8 offline build and reobfuscation passed |
 | Native Minecraft QA | Three Froglight native views, night/charged checks, ten-family dedicated-server spawn and saved-companion loading passed |
 
@@ -55,7 +55,7 @@ The approved design direction keeps a centralized themed burst system instead of
 
 ## 🧪 Verification Status
 
-Latest reference2 passed its build, exact-JAR server and focused native-client checks. Curved petals, Pie-driven eyes and the charged overlay repair are implemented. **Exact concept-art fidelity remains unaccepted.** [Review the evidence and remaining gates](docs/REFERENCE2.md).
+Latest reference3 passed its build, exact-JAR server and focused native-client checks. Curved petals, Pie-driven eyes and the charged overlay repair are implemented. **Exact concept-art fidelity remains unaccepted.** [Review the evidence and remaining gates](docs/REFERENCE3.md).
 
 Historical verified checkpoints:
 
