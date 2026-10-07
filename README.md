@@ -2,7 +2,9 @@
 
 A botanical Minecraft Forge project where Creepers become living floral variants with themed identities, Bloom Bursts, and a long-term ReBloom lifecycle vision.
 
-> Actual in-game screenshots will be used for project artwork once native runtime captures are available. No illustrated placeholder banner is used.
+![Bloom & Boom family in native Minecraft](docs/assets/bloom-family-native-dev7.png)
+
+*Actual Minecraft Forge development-client capture. This image shows the earlier input-fix checkpoint; the visual1 refresh is newer.*
 
 ## 🌱 Project Identity
 
@@ -45,30 +47,24 @@ The approved design direction keeps a centralized themed burst system instead of
 | Forge target | 47.4.23 |
 | Stable lineage | Creeperella 1.5.0 |
 | Verified development lineage | Creeperella 1.6.0-dev6+ |
-| dev7-polish39 candidate | Recovered development candidate, not published release |
-| Build status | Candidate JAR inspected; reproducible build and corrected metadata still to verify |
-| Native Minecraft QA | Pending dev7 validation |
+| Latest local candidate | 1.6.0-dev7-polish39-visual1; development build, not a public release |
+| Build status | Java 17 / Gradle 8.8 offline build and reobfuscation passed |
+| Native Minecraft QA | Development client launched; all ten family variants spawned; companion input fixes and four-variant visual refresh exercised |
 
 ---
 
 ## 🧪 Verification Status
 
-Completed offline work:
+Verified checkpoints:
 
-- source and resource audits
-- registry contract regression harness work
-- malformed resource and broken-reference fixture testing
+- Forge build and production dedicated-server startup passed for the recovered baseline and inputfix1.
+- Native development client displayed all ten family variants and saved/reloaded a transformed companion.
+- inputfix1 repairs double-hand empty-click toggles and synchronizes companion ownership to the client while keeping legacy save identifiers.
+- visual1 refreshes Cinderella, Mariglow, Verdalia, and Nacrella textures and restores the shared family mesh for the froglight variants. Cat assets and animation are protected by regression checks.
+- The visual1 offline build, resource graph, UV/glow contracts, and 712 sampled animation formula checks passed. Actual in-game visual captures were taken.
 
-Verified historical native work exists for earlier accepted checkpoints.
+Still open: full gameplay/compatibility coverage, sound testing with a complete official asset cache, authenticated multiplayer, and importing the recovered source into this repository. Development bundles are review candidates, not a stable release. See the [wiki](https://github.com/Herbertofury/Bloom-and-Boom/wiki) for bounded checkpoint notes.
 
-Not claimed for current dev7 candidate:
-
-- independently reproduced Forge build
-- accepted public release JAR
-- native client/server validation
-- save migration verification
-
-NBT migration compatibility cannot be proven statically and requires runtime testing.
 
 ---
 
