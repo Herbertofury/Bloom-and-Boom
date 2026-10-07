@@ -6,6 +6,38 @@
 
 This repository currently documents the project direction. It does not yet contain the recovered development source tree.
 
+## Latest visual and interaction checkpoint - 7 October 2026
+
+Candidate **1.6.0-dev7-polish39-visual1** targets Minecraft 1.20.1 / Forge 47.4.23 / Java 17. It is a development candidate, not a stable release. This dated section supersedes older pending-client/build statements below; older receipts remain historical evidence.
+
+### What changed
+
+- Cinderella, Mariglow, Verdalia, and Nacrella have refreshed 128x64 texture atlases and matching emissive masks.
+- The three froglight variants use the shared family body/feet mesh again, replacing the stretched independent shell. Their botanical crowns and themed palettes remain.
+- Sparse glow masks have zero RGB outside emissive texels, preventing additive-render washout.
+- Cat assets and its animation section remain unchanged. A regression gate checks 25 protected assets and the original Cat animation section.
+- Retains inputfix1: empty-handed companion commands run only for the main-hand event; client ownership synchronization fixes owner-sensitive interaction feedback without changing legacy save keys.
+
+### Verified
+
+- Offline Gradle 8.8 build and reobfuscation passed.
+- Packaged JAR: **451,653 bytes**, SHA-256 `27bba9f74c2e8140b1559e3f219d1c37ad7999fb99a05274f0c349e687a15cb4`.
+- This exact JAR booted a production dedicated server, spawned all ten active family variants, loaded the existing QA companion, saved, and exited cleanly.
+- A native development client rendered the four refreshed variants. Actual in-game screenshot pairs were captured; the QA world saved and the client exited with code 0.
+- Static checks passed: 134 runtime JSON resources, four UV/glow contracts, protected Cat/assets, main-hand/owner guards, Cat rest reset, and 712 sampled Pie animation formula evaluations. These are not 712 gameplay scenarios.
+- Earlier inputfix1 native tests exercised tame/bond progress, Follow/Stay, whistle binding/actions, Cat-to-Cherry transformation, and companion save/reload.
+
+### Remaining gates
+
+- Charged/night/movement visual matrix and broader gameplay, multiplayer, and mod compatibility.
+- Complete official Minecraft assets for sound/menu QA; the cloud cache is incomplete. No security checks were disabled and no Minecraft assets are redistributed.
+- Recovered-source import into this repository and any public release publication remain open.
+- Historical Nacrella hash mismatch and the absent older Cat-pose fixture remain recorded below. New art does not turn old failed checks into passing receipts.
+
+The visual1 development bundle was delivered directly to the owner with source, JAR, checksums, screenshots, and test results. The GitHub repository remains a documentation hub pending source import.
+
+---
+
 ## Verified build and server checkpoint - 7 October 2026
 
 This checkpoint supersedes the earlier dependency/build blockers recorded below. The repository remains a documentation hub until the recovered source is imported; no public release is claimed.
