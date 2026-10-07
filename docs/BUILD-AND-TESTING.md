@@ -23,20 +23,15 @@ Wrapper builds should use:
 
 when the official wrapper is restored.
 
-## Current Build State — 2026-10-06
+## Current Build State — 2026-10-07
 
-A development candidate JAR has been independently downloaded and inspected:
+As of **7 October 2026**, the exact recovered source/toolchain and cache have been restored, fresh Java compilation and the Gradle production build/reobfuscation passed, and the branding-corrected candidate is **437,280 bytes**, SHA-256 `a95733e903a4afabe94e097c56724b65cb581b2e6138f73fcad41fefe71346df`. The archive passed integrity inspection and contains 76 classes. Display name and project URL are corrected; legacy registry identity, dependency ranges, credits and license are unchanged.
 
-- Size: **437,288 bytes**
-- SHA-256: `061ff99e83e4ba40782b1c4e3353b03e551b73b58ab1b843b8cfd6d2289d147c`
-- Archive integrity: PASS (336 entries)
-- Metadata: legacy display name and old repository URL remain; this is **not the public release**.
+The exact packaged JAR booted in a separate Forge 47.4.23 / Minecraft 1.20.1 production dedicated server. All ten active family spawns, the legacy Blossom-to-Cherry alias and controlled Cherry Grove/Mushroom Fields ecology checks passed. The production server loaded the saved named charged Cat and its tested tame/sit/owner/bond state from the isolated development QA world. Both server runs saved and shut down cleanly. These focused checks do not certify all save migrations or real-player behavior.
 
-A later branding-corrected JAR was reported, but has not been independently inspected in this workspace. Earlier build-work reports describe compilation/reobfuscation success and a development server reaching `Done`. Those reports are not a freshly repeated build or production-JAR acceptance test.
+The earlier Linux native-library blocker is being addressed with checksum-verified official LWJGL Linux artifacts and a native desktop launch. Client rendering and gameplay are still **not accepted**. Network-restricted authentication-key retrieval warnings occurred during server testing; authenticated multiplayer was not tested.
 
-The reported native client blocker is `UnsatisfiedLinkError: Failed to locate library: liblwjgl.so`. Check Linux x86_64 LWJGL native classifiers and the matching runtime before retrying. A working Xvfb display alone does not resolve mismatched native libraries.
-
-The current direct-work environment still needs the exact source/toolchain and dependencies restored. Keep these stages separate: artifact inspection, reproducible build, development launch, production-JAR launch, gameplay, and save/reload acceptance.
+**Still required:** native client and production-client testing, genuine in-game screenshots, companion/whistle/transformation interactions, broader save compatibility, resolution of the existing Nacrella protection-hash discrepancy and missing historical Cat-pose fixture, recovered-source import and release publication. See [Status](STATUS.md) for the precise evidence boundary. Historical PASS receipts do not establish a fresh dev7 PASS.
 
 See the [build wiki](https://github.com/Herbertofury/Bloom-and-Boom/wiki/Build-and-Testing) for the full native QA protocol.
 
