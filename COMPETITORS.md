@@ -28,3 +28,28 @@ During each daily review, check linked official release notes/issues and update 
 ## Review log
 
 - 2026-11-12: initial repository-scoped comparison index; official sources reviewed at documentation level. No gameplay, performance or compatibility tests run in this pass. No implementation or native GitHub Wiki publication claimed.
+
+## Candidate foundations, concrete reuse and shared work
+
+| Candidate | Reuse boundary | Differentiation experiment |
+|---|---|---|
+| Existing Creeperella lineage and centralized Bloom Burst system | Preserve IDs, companion ownership, saved transformations and existing family behavior. Extend the working burst dispatcher instead of adding per-family parallel implementations. | Run all family/state transitions through one reproducible matrix; compare visual clarity, save continuity and server costs with the last-good candidate. |
+| [GeckoLib](https://github.com/bernie-g/geckolib) | Candidate animation controllers, easings and sound/particle keyframes for original assets; first inventory current animation machinery. | One companion idle → fuse → burst → reform prototype, with remote-player synchronization and disabled-effects fallback, before any migration. |
+| [Creeper Overhaul](https://www.curseforge.com/minecraft/mc-mods/creeper-overhaul) | Variant identity and biome presentation reference, not a code/art donor. | Evaluate whether a user can distinguish family, ownership and imminent action at gameplay distance without relying on color. |
+
+**License gates:** GeckoLib current [MIT license](https://github.com/bernie-g/geckolib/blob/main/LICENSE) was read at blob `491454db53d5a2166d8a472d07cc8b60e6d016fb`; exact target dependency still needs review. Creeper Overhaul code/asset reuse is **not cleared** by this page. Existing recovered lineage assets retain their own notices and permission requirements; private bundles are not publication-ready merely because a public comparator exists.
+
+### Shared-work proposals
+
+- JetSetCraft/AoA: common original animation-event test vocabulary (pose owner, event identity, timing, reload/reconnect outcome) could reduce repeated mistakes. Do not force every mod onto one animation engine.
+- Hearth and Haul: share companion ownership and unload/reload regression scenarios, while keeping living creature state separate from storage capabilities.
+- Engineering Atlas: retain visual/performance comparisons and failed evidence; screenshots must identify the precise game/JAR and scene.
+
+- [ ] Establish the current animation and save-state baseline before selecting a new framework.
+- [ ] Implement no new family solely to match a competitor; prioritize fidelity and complete companion behavior already promised.
+
+### Reuse admission gates
+
+These are **candidate foundations and experiments**, not selected dependencies or measured improvements. Before reuse: pin the exact version/commit and loader; inspect its source and dependency tree; record code, asset, trademark and redistribution terms separately; keep required notices; verify permission where terms are restrictive or unclear. Public visibility is not a license. A current default-branch license is evidence for that snapshot, not every historical release. Prefer an upstream dependency/API or a small original adapter over a fork when it preserves compatibility. Do not copy proprietary game assets or publish private fixtures.
+
+For every admitted experiment retain baseline and candidate artifacts, representative native workloads, correctness/feature parity, cold/warm latency, p95 frame/tick time, memory, interrupted-save/recovery evidence and rollback. Promote only after the actual target improves without losing requirements. Cross-project sharing below is an interface proposal, not permission to change another project's implementation or declare integration complete.
