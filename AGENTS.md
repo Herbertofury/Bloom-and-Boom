@@ -16,3 +16,7 @@
 - Use genuine in-game screenshots for project artwork. Never substitute generated illustrations for native QA evidence.
 - Keep source/docs, the live GitHub Wiki and relevant to-do statuses synchronized at coherent checkpoints. Record the actual commit, artifact digest, passed/failed/not-run checks and next blocker.
 - Do not modify Enderloom/AoA or another worker's active task as incidental work.
+
+## Pinned shared engineering guidance
+
+Read `.agents/foundry/AGENTS-adapter.md` for the shared engineering mindset and relevant pinned standards. The instructions above remain repository-owned; preserve this project's identity, compatibility envelope, publication gates and native evidence requirements. Do not copy Bloom & Boom-specific rules into the shared core.
