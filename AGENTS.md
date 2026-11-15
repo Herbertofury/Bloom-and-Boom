@@ -2,7 +2,7 @@
 
 ## Start here
 - Read `docs/STATUS.md`, `docs/ROADMAP.md`, current issues, and the relevant build notes before substantive work. Make one quick to-do check, then implement the requested task; avoid repeated full-backlog scans.
-- Keep the user's primary request first. Tackle related authorized to-dos alongside it, avoid collisions with active workers, and mark completion only with acceptance evidence. Canonical rule: https://github.com/Herbertofury/Agent-Foundry/blob/main/PRODUCT_INVARIANTS.md#19-project-to-do-awareness-without-task-drift
+- Keep the user's primary request first. Tackle related authorized to-dos alongside it, avoid collisions with active workers, and mark completion only with acceptance evidence. Canonical rule: https://github.com/Herbertofury/Athena/blob/0131c820ba311459b6f197965b8cc074512ded1a/guidance/PRODUCT_INVARIANTS.md#19-project-to-do-awareness-without-task-drift
 - Load only relevant instructions. Chat-facing skills are not agents or permission grants; do not paste the full skill catalog into every task.
 
 ## Compatibility and identity
@@ -19,4 +19,4 @@
 
 ## Pinned shared engineering guidance
 
-Read `.agents/foundry/AGENTS-adapter.md` for the shared engineering mindset and relevant pinned standards. The instructions above remain repository-owned; preserve this project's identity, compatibility envelope, publication gates and native evidence requirements. Do not copy Bloom & Boom-specific rules into the shared core.
+Read `.agents/athena/AGENTS-adapter.md` for the shared engineering mindset and relevant pinned standards. The instructions above remain repository-owned; preserve this project's identity, compatibility envelope, publication gates and native evidence requirements. Do not copy Bloom & Boom-specific rules into the shared core.
